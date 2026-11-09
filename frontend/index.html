@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171914">
+  <title>windflower.chroma</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="signal"></span><span>windflower<span class="dot">.</span>chroma</span></div>
+      <div class="live"><span class="live-dot"></span> ON AIR</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">CHROMA FLOWER RADIO NETWORK</div>
+      <h1>A soundscape<br><em>without interruption.</em></h1>
+      <p class="intro">Uma transmissão contínua, criada a partir da sua biblioteca musical local.</p>
+    </section>
+
+    <section class="player panel">
+      <div class="artwork" id="artwork"><span>WF</span><small>WIND FLOWER RADIO</small></div>
+      <div class="track-info">
+        <div class="eyebrow">NOW PLAYING</div>
+        <h2 id="track-title">Aguardando transmissão</h2>
+        <p id="track-subtitle">A rádio está preparando a biblioteca.</p>
+        <div class="player-controls">
+          <button id="play-button" class="primary">▶ Ouvir transmissão</button>
+          <button id="skip-button" class="secondary" title="Pular música">⏭</button>
+          <span id="player-state">PLAYER OFF</span>
+        </div>
+        <audio id="audio" preload="none"></audio>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat panel"><span class="eyebrow">LIBRARY</span><strong id="library-count">—</strong><small>faixas encontradas</small></div>
+      <div class="stat panel"><span class="eyebrow">LISTENERS</span><strong id="listener-count">0</strong><small>conexões ativas</small></div>
+      <div class="stat panel"><span class="eyebrow">BROADCAST</span><strong id="broadcast-state">OFFLINE</strong><small>estado do servidor</small></div>
+    </section>
+
+    <section class="history panel">
+      <div class="section-heading"><div><div class="eyebrow">RECENTLY PLAYED</div><h2>Histórico</h2></div><span class="muted">ÚLTIMAS 12 FAIXAS</span></div>
+      <ol id="history-list"><li class="empty">Nenhuma música reproduzida ainda.</li></ol>
+    </section>
+
+    <footer><span>windflower.chroma</span><span>Part of the Chroma Flower creative ecosystem.</span></footer>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

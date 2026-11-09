@@ -1,0 +1,16 @@
+{
+    "station_name": "windflower.chroma",
+    "music_directory": "D://Portifolio//Programação//Digital Garden//windflower.chroma//music",
+    "supported_extensions": [
+        ".mp3",
+        ".flac",
+        ".wav",
+        ".ogg",
+        ".opus",
+        ".m4a",
+        ".aac",
+        ".wma"
+    ],
+    "ffmpeg_path": "ffmpeg",
+    "stream_bitrate": "192k"
+}
